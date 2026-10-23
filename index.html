@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAIPERX SHOP</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #141414;
+            --accent-color: #ff1e32;
+            --text-color: #ffffff;
+            --text-gray: #a0a0a0;
+            --border-color: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-color);
+            margin-bottom: 10px;
+            box-shadow: 0 0 15px var(--accent-color);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: var(--text-gray);
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .shop-now-btn {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            color: var(--text-color);
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: border-color 0.3s;
+        }
+
+        .shop-now-btn:hover {
+            border-color: var(--accent-color);
+        }
+
+        .btn-icon {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 16px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: transform 0.2s, border-color 0.3s;
+        }
+
+        .link-item:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .link-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .link-info h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .link-info p {
+            margin: 5px 0 0 0;
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+
+        .arrow {
+            color: var(--accent-color);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://via.placeholder.com/100" alt="Logo" class="logo">
+            <h1>VAIPERX SHOP</h1>
+            <p class="subtitle">ศูนย์รวมลิงก์พาสเนล และคลิปสอนจบในที่เดียว</p>
+        </header>
+
+        <a href="#" class="shop-now-btn">
+            <div class="link-content">
+                <span class="btn-icon">🛒</span>
+                <span><strong>SHOP</strong><br>ซื้อคีย์ VAIPERX</span>
+            </div>
+            <span class="arrow">></span>
+        </a>
+
+        <div class="section-title">เลือกลิงก์ตามสินค้าที่ซื้อ</div>
+
+        <div class="link-list">
+            <a href="#" class="link-item">
+                <div class="link-content">
+                    <img src="https://via.placeholder.com/60" alt="Link 1" class="link-img">
+                    <div class="link-info">
+                        <h3>1. แพนท่อม – ลิงก์และคลิปสอน</h3>
+                        <p>เว็บยืนยันคีย์ • แอป iOS / Android • คลิปสอนแพนท่อม</p>
+                    </div>
+                </div>
+                <span class="arrow">></span>
+            </a>
+
+            <a href="#" class="link-item">
+                <div class="link-content">
+                    <img src="https://via.placeholder.com/60" alt="Link 2" class="link-img">
+                    <div class="link-info">
+                        <h3>2. Proxy-พร็อกซี่</h3>
+                        <p>เปิดลิงก์เว็บไซต์ Proxy</p>
+                    </div>
+                </div>
+                <span class="arrow">></span>
+            </a>
+
+            <a href="#" class="link-item">
+                <div class="link-content">
+                    <img src="https://via.placeholder.com/60" alt="Link 3" class="link-img">
+                    <div class="link-info">
+                        <h3>3. ลิงก์ดึงตัวโดนหัวและคลิปสอน</h3>
+                        <p>ลิงก์ดึงตัวโดนหัว • คลิปติดตั้ง • คลิปสอนใช้งาน</p>
+                    </div>
+                </div>
+                <span class="arrow">></span>
+            </a>
+
+            <a href="#" class="link-item">
+                <div class="link-content">
+                    <img src="https://via.placeholder.com/60" alt="Link 4" class="link-img">
+                    <div class="link-info">
+                        <h3>4. ลิงก์ GBOX และคลิปสอน</h3>
+                        <p>GET UID • ลิงก์บอก • คลิปัตรักใช้งาน</p>
+                    </div>
+                </div>
+                <span class="arrow">></span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
